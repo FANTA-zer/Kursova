@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kursova</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="script/js.js"></script>
+	</head>
+	<body>
+	<!-- HEADER -->
+	<header class="header">
+	<div class="container">		
+		<h1>Моделі фінансового менеджменту державних підприємств</h1>
+		<h2>
+			<small>Розробив: ЩАСНИЙ С.Р., студент 4 курсу 2 групи ФОАІС </small>
+		</h2>
+	</div>
+	</header>
+	<!-- /HEADER -->
+	<!-- NAVIGATION -->
+	<nav class="page-navigation">
+		<div class="container">
+			<ul>
+				<li><a href="index.html">Головна</a></li>
+				<li><a href="kalkulator.html">Калькулятор</a></li>
+				<li><a href="zagruzka.html">Завантажити</a></li>
+			</ul>
+
+			<!--	LOGIN FORM -->
+			<form action="#" class="login">
+				<input type="text" placeholder="Login" required>
+				<input type="password" placeholder="Password" required>
+				<input type="submit" value="Sign In">
+			</form>
+			<!--	/LOGIN FORM -->
+		</div>
+	</nav>
+	<!-- /NAVIGATION -->
+	<!-- MAIN SELECTION -->
+	<main>
+		<div class="container">
+			<h2 class="collection-title"> Розрахунок балансу <small>та його перевірка</small></h2>
+			<div class="collections">
+				<div class="collection-item-outer">
+					<div class="collection-item">
+						<div class="collection-text">			
+							<h><b>Розрахунок активу:</b></h>
+								<div class="collection-box">
+									<input type="text" id="neob_act" value="" placeholder="Введіть суму необ. акт.">
+									<input type="text" id="ob_act" value="" placeholder="Введіть суму об. акт.">
+									<input type="text" id="maib_vitr" value="" placeholder="Введіть суму майб. витр.">
+									<button onClick="raschitat();">Розрахувати суму актива</button>
+									<div id="activ"></div>
+								</div>
+									<h><b>Розрахунок пасиву:</b></h>
+								<div class="collection-box">
+									<input type="text" id="vlasn_kapital" value="" placeholder="Власний капітал">
+									<input type="text" id="zab_nast_vitr" value="" placeholder="Забезп. наст. витрат">
+									<input type="text" id="dovg_zabov" value="" placeholder="Довгострокові забов.">
+									<input type="text" id="pot_zabov" value="" placeholder="Поточні забов.">
+									<input type="text" id="dochodu_maib_per" value="" placeholder="Доходи майб. періодів">
+									<button onClick="raschitat1();">Розрахувати суму пасива</button>
+									<div id="pasiv"></div>
+								</div>
+								<button onClick="proverka();">Перевірити баланс</button>
+
+
+						</div>
+						<div class="collection-rozrach">
+						<img src="images/rozrachunok.jpg" alt="List picture" width="" height="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- /MAIN SELECTION -->
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="container">
+			<p><a href="https://www.facebook.com/shchsr">Профіль у Facebook</a></p>         <p>e-mail: shchsr@gmail.com </p>       <p> Тел.: +38-(098)-641-51-64</p>
+		</div>
+	</footer>
+	<!-- /FOOTER -->
+	</body>
+</html>
